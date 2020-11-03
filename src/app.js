@@ -42,9 +42,7 @@ app.post("/repositories", validateModel, (request, response) => {
     techs,
     likes: 0
   };
-
   repositories.push(repository);
-
   return response.status(201).json(repository);
 });
 
